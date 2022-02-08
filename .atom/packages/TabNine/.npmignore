@@ -1,0 +1,9 @@
+node_modules
+lib
+.githubnode_modules
+
+sig
+auth
+registration_key
+
+package-lock.json

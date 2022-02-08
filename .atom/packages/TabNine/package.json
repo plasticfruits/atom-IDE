@@ -1,0 +1,122 @@
+{
+  "_from": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+  "_id": "TabNine@4.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-VyOzee0TlY+HajHf/7J3R54a1b+EjXrs63LR3TPbrxMUyoM/elJYU7tolXSvm6tMwvJk10VLWMDCbevSMP+pPg==",
+  "_location": "/TabNine",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+  "_shasum": "e5e629b21237575260de85e697e8da1f7916afc8",
+  "_spec": "https://www.atom.io/api/packages/tabnine/versions/4.0.7/tarball",
+  "_where": "/private/var/folders/hc/d_ry15g10hd9hr31l3s25l1r0000gn/T/apm-install-dir-202219-78629-1qj0ex.wfqm4",
+  "bugs": {
+    "url": "https://github.com/codota/tabnine-atom/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^8.0.0",
+    "await-semaphore": "^0.1.3",
+    "extract-zip": "^2.0.1",
+    "https-proxy-agent": "^5.0.0",
+    "semver": "^7.3.5",
+    "tmp": "^0.2.1"
+  },
+  "deprecated": false,
+  "description": "Tabnine - Code Faster with the All-Language AI Assistant for Code Completion, autocomplete JavaScript, Python, TypeScript, PHP, Go, Java, node.js, Ruby, C/C++, HTML/CSS, C#, Rust, SQL, Bash, Kotlin, React, Swift, Scala, Sass, Perl, Objective C, Node JS, Matlab, Haskell, Dart, Angular",
+  "devDependencies": {
+    "@types/atom": "^1.40.11",
+    "@types/node": "^16.10.2",
+    "@types/semver": "^7.3.8",
+    "@types/tmp": "^0.2.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "engines": {
+    "atom": ">=1.15.0 <2.0.0"
+  },
+  "homepage": "https://github.com/codota/tabnine-atom#readme",
+  "keywords": [
+    "javascript",
+    "python",
+    "typescript",
+    "php",
+    "autocomplete",
+    "ruby",
+    "java",
+    "go",
+    "golang",
+    "bash",
+    "kotlin",
+    "html",
+    "css",
+    "ocaml",
+    "perl",
+    "rust",
+    "julia",
+    "lua",
+    "haskell",
+    "c",
+    "cpp",
+    "c++",
+    "csharp",
+    "c#",
+    "react",
+    "swift",
+    "objective-c",
+    "objectivec",
+    "ai",
+    "method completion",
+    "intellicode",
+    "intellisense",
+    "snippets",
+    "kite",
+    "nodejs",
+    "node",
+    "node.js",
+    "jupyter"
+  ],
+  "license": "MIT",
+  "main": "./dist/main",
+  "name": "TabNine",
+  "package-deps": [
+    "autocomplete-plus"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codota/tabnine-atom.git"
+  },
+  "scripts": {
+    "atom:prepublish": "yarn --frozen-lockfile && webpack --mode production",
+    "build": "webpack --mode development",
+    "compile": "webpack --mode development --watch"
+  },
+  "version": "4.0.7"
+}

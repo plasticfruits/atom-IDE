@@ -1,0 +1,47 @@
+{
+  "_from": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+  "_id": "mystique-atom-syntax@0.4.4",
+  "_inBundle": false,
+  "_integrity": "sha512-A+ui5QOh0RWR2w/RaDqwAvYtBMKvGE1xuWYJNhrqN8a5dFoIOs3aTn9Xwvc1oTnWdP1HP+i+TCeNUmLfCfaTcw==",
+  "_location": "/mystique-atom-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+  "_shasum": "36dd6d4c7d460d297e4307db3afdaf5c58bde263",
+  "_spec": "https://www.atom.io/api/packages/mystique-atom-syntax/versions/0.4.4/tarball",
+  "_where": "/private/var/folders/hc/d_ry15g10hd9hr31l3s25l1r0000gn/T/apm-install-dir-202218-65414-68ogg.z4xxsw",
+  "bugs": {
+    "url": "https://github.com/tygzy/mystique-atom-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Mystique Syntax theme for Atom!",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tygzy/mystique-atom-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "mystique",
+    "dracula"
+  ],
+  "license": "MIT",
+  "name": "mystique-atom-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tygzy/mystique-atom-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.4.4"
+}

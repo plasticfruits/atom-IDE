@@ -1,0 +1,29 @@
+"*":
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "minimap-git-diff"
+      "python-linters"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "city-lights-syntax"
+    ]
+  editor:
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "30d52aa0-1586-4fb1-8718-74fcfa6c2904"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "python-linters":
+    lintTrigger: {}
+  welcome:
+    showOnStartup: false

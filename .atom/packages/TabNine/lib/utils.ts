@@ -1,0 +1,65 @@
+
+export function withPolling(
+  callback: (clear: () => void) => void,
+  interval: number,
+  timeout: number
+): void {
+  const pollingInterval = setInterval(() => callback(clearPolling), interval);
+
+  const pollingTimeout = setTimeout(() => {
+    clearInterval(pollingInterval);
+  }, timeout);
+
+  function clearPolling() {
+    clearInterval(pollingInterval);
+    clearTimeout(pollingTimeout);
+  }
+}
+
+
+export function sleep(time: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+// eslint-disable-next-line
+export function isFunction(functionToCheck: any): boolean {
+  // eslint-disable-next-line
+  return (
+    functionToCheck && {}.toString.call(functionToCheck) === "[object Function]"
+  );
+}
+
+export async function asyncFind<T>(
+  arr: T[],
+  predicate: (element: T) => Promise<boolean>
+): Promise<T | null> {
+  // eslint-disable-next-line no-restricted-syntax
+  for await (const element of arr) {
+    if (await predicate(element)) {
+      return element;
+    }
+  }
+  return null;
+}
+
+export function formatError(error: Error): string {
+  return `OS: ${process.platform} - ${process.arch}\n Error: ${
+    error.name
+  }\nMessage: ${error.message}\nStack: ${error.stack || ""}`;
+}
+
+export function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+export function trimEnd(str: string, suffix: string): string {
+  return str.replace(new RegExp(`${escapeRegExp(suffix)}$`), "");
+}
+
+export function escapeTabStopSign(value: string): string {
+  return value.replace(new RegExp("\\$", "g"), "\\$");
+}
+
+export function isMultiline(text?: string): boolean {
+  return text?.includes("\n") || false;
+}
